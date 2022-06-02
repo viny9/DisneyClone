@@ -1,0 +1,109 @@
+.appHead {
+  padding: 0;
+}
+
+.nav {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+
+
+  ul {
+
+    li {
+      font-weight: 700;
+      padding: 10px 0;
+
+      &:hover {
+        ul {
+          width: 230px;
+          display: block;
+          padding: 14px 25px 0 14px 25px;
+
+          li {
+            margin: 14px 0;
+            font-size: 15px;
+          }
+        }
+      }
+
+      a {
+        color: #000;
+        letter-spacing: 1px;
+      }
+    }
+
+    ul {
+      width: 35%;
+      padding: 15px;
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: rgb(46, 45, 45);
+
+      li {
+        list-style-type: none;
+        padding: 1px;
+
+        a {
+          text-align: center;
+          color: #fff;
+          text-decoration: none;
+
+          &:hover {
+            color: #909090;
+            transition: color 0.2s ease-in-out;
+
+          }
+        }
+      }
+    }
+  }
+
+
+  @keyframes fadeInSubItem {
+    from {
+      opacity: 0;
+      margin-top: 10px;
+    }
+
+    to {
+      opacity: 1;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.logo {
+  width: 100px;
+}
+
+.input {
+  width: 335px;
+  display: flex;
+  align-items: center;
+
+  input {
+    width: 287px;
+    height: 40px;
+    border: 1px solid;
+    border-right: 0;
+    background-color: #F5F5F5;
+    border-radius: 5px 0 0 5px;
+  }
+
+  button {
+    height: 40px;
+    border: 1px solid;
+    border-left: 0;
+    width: 48px;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+
+    svg {
+      color: #007bbd;
+    }
+  }
+}
